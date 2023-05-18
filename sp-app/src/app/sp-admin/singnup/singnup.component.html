@@ -1,0 +1,55 @@
+
+  <form [formGroup]="user" (ngSubmit)="save()" *ngIf="status==false">
+    <div class="form-group">
+        <label for="firstName">First Name </label>
+        <input type="text" formControlName="firstName" class="form-control" id="firstName"/>
+      <div  *ngIf="firstName ?.touched && firstName?.invalid" class="alert alert-danger">
+        First Name is Required.. 
+     </div>
+     </div>
+     <div class="form-group">
+        <label for="lastName">Last  Name </label>
+        <input type="text" formControlName="lastName" class="form-control" id="lastName"/>
+      <div  *ngIf="lastName ?.touched && lastName?.invalid" class="alert alert-danger">
+        Last  Name is Required.. 
+     </div>
+     </div>
+    
+     <div class="form-group">
+        <label for="mobileNumber">Mobile Number </label>
+        <input type="text" formControlName="mobileNumber" class="form-control" id="mobileNumber"/>
+      <div  *ngIf="mobileNumber?.touched && mobileNumber?.invalid" class="alert alert-danger">
+        Mobile Number is Required.. 
+     </div>
+     </div>
+
+     <div class="form-group">
+        <label for="email">Email </label>
+        <input type="text" formControlName="email" class="form-control" id="email"/>
+      <div  *ngIf="email?.touched && email?.invalid" class="alert alert-danger">
+        Email is Required.. 
+     </div>
+     </div>
+
+     <div class="form-group">
+        <label for="password">Password </label>
+        <input type="password" formControlName="password" class="form-control" id="password"/>
+      <div  *ngIf="password?.touched && password?.invalid" class="alert alert-danger">
+       Password is Required.. 
+     </div>
+     </div>
+    
+     <div class="form-group">
+        <label for="userType">User Type</label>
+        <input type="radio"  formControlName="role" class="form-check-input" value="owner" id="userType"/> Owner
+        <input type="radio" formControlName="role" class="form-check-input" value="customer" id="userType"/>Customer
+        <div *ngIf="role?.touched && role?.invalid" class="alert alert-danger">
+            User Type is required      
+        </div>
+
+    </div> 
+    <div class="form-group"> <input type="submit" value="submit" class="btn btn-primary"/> </div>
+    </form> <div *ngIf="status == true">
+    We have sent a mail to your mail box.
+    Please activate the same to finish the signup.
+    </div>

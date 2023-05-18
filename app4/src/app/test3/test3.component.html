@@ -1,0 +1,64 @@
+<form [formGroup]="person" (ngSubmit)="save()">
+
+First Name:<input type="text" formControlName="firstName"/> 
+<span *ngIf="firstName?.touched && firstName?.invalid">
+    pls enter the First Name 
+</span><br>
+Last Name:<input type="text" formControlName="lastName"/> 
+<span *ngIf="lastName?.touched && lastName?.invalid">
+    pls enter the Last Name 
+</span><br>
+Age :<input type="text" formControlName="age"/> 
+<span *ngIf="age?.touched && age?.invalid">
+    pls enter the correct Age
+</span><br>
+Email :<input type="text" formControlName="email"/> 
+<span *ngIf="age?.touched && age?.invalid">
+    pls enter the Email
+</span><br>
+Mobile :<input type="text" formControlName="mobile"/> 
+<span *ngIf="age?.touched && age?.invalid">
+    pls enter the Mobile number 
+</span><br>
+Salary :<input type="text" formControlName="salary"/> 
+<span *ngIf="age?.touched && age?.invalid">
+    pls enter the Salary 
+</span><br>
+Address :<input type="text" formControlName="address"/> 
+<span *ngIf="age?.touched && age?.invalid">
+    pls enter the you Address 
+</span><br>
+<input type="submit" value="submit"/>
+</form>
+
+
+
+
+
+
+
+
+<!-- <h1>Details Of person</h1>
+
+<table border="1">
+  
+    <tr>
+        
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th> Age </th>
+        <th>Email</th>
+        <th>mobile Number</th>
+        <th>Salary</th>
+        <th>Address</th>
+    </tr>
+  <tr *ngFor="let st of person">
+    <td>  {{ st.firstName }} </td>
+    <td>  {{ st.lastName }} </td>
+    <td>  {{ st.age }} </td>
+    <td>  {{ st.email  }} </td>
+    <td>  {{ st.mobile }} </td>
+    <td>  {{ st.salary }} </td>
+    <td>  {{ st.address }} </td>
+
+  </tr> -->

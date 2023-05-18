@@ -1,0 +1,11 @@
+<form [formGroup]="person"(ngSubmit)="save()">
+First Name : <input type="text" formControlName="firstName"/><br>
+Last  Name : <input type="text" formControlName="lastName"/><br>
+Age : <input type="text" formControlName="age"/><br>
+<div formGroupName="address">
+ House No  : <input type="text" formControlName="houseNo"/><br>
+ Street Name  : <input type="text" formControlName="streetName"/><br>
+ City   : <input type="text" formControlName="city"/><br>
+</div>
+<input type="submit" value="submit"/>
+</form>

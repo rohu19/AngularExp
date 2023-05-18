@@ -1,0 +1,13 @@
+package com.example.servicesapp1;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ServicesApp1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ServicesApp1Application.class, args);
+	}
+
+}

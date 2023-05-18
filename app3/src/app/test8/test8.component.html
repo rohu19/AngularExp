@@ -1,0 +1,22 @@
+Students:
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Skills</th>
+    </tr>
+    <tr *ngFor="let std of students">
+        <td> {{ std.sid }}</td>
+        <td> {{ std.firstName }}</td>
+        <td> {{ std.lastName }}</td>
+        <td> {{ std.age  }}</td>
+        <td> {{ std.skills  }}</td>
+        <td>
+            <span *ngFor="let skill of std.skills">
+            {{ skill }},
+           </span>
+        </td>
+    </tr>
+</table>

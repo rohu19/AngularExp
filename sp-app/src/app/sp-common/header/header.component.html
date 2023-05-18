@@ -1,0 +1,56 @@
+
+
+
+
+ <div class="header">
+
+
+
+    <div class="header">
+       <nav class="navbar navbar-expand-lg bg-light">
+           <div class="container-fluid">
+               <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav ms-auto"> 
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/signup" *ngIf="!isLoggedIn()">Signup</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/login" *ngIf="!isLoggedIn()">Login</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/forgotten-password" *ngIf="!isLoggedIn()">Forgotten Password</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/add-sp" *ngIf="isOwner()">Add SP</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/list-sps" *ngIf="isOwner()">List My SPs</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/list-all-bookings" *ngIf="isOwner()">List All Bookings</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/sp-search" *ngIf="isCustomer()">Search SP</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/sp-booking" *ngIf="isCustomer()">Book SP</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/mybookings" *ngIf="isCustomer()">My Bookings</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/myprofile" *ngIf="isLoggedIn()">My Profile</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/logout" *ngIf="isLoggedIn()">LogOut</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" routerLink="/change-password" *ngIf="isLoggedIn()">Change Password</a>
+                   </li>
+                   </ul>
+               </div>
+           </div>
+       </nav>
+   </div>
+   
+   

@@ -1,0 +1,18 @@
+<h1>Hey bro</h1>
+
+
+
+<form  [formGroup]="person" (ngSubmit)="save()">
+    First Name : <input type="text" formControlName="firstName"/><br>
+   Last Name : <input type="text" formControlName="lastName"/><br>
+   Skills: 
+   <div formArrayName="knowSkills">
+    <span *ngFor="let skill of knowSkills.controls; index as i">
+       <input type="checkbox"[formControlName]="i">
+
+       {{ skills[i].name }} &nbsp;&nbsp;
+        
+    </span>
+   </div>
+<input type="submit" value="submit"/>
+</form>

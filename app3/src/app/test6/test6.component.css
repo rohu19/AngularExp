@@ -1,0 +1,9 @@
+.person{
+    background-color: blue;
+    width: 10px;
+    height: 15;
+    display: flex;
+}
+body{
+    background-color: rgb(88, 28, 185);
+}

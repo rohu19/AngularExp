@@ -1,0 +1,26 @@
+<!-- <p>list-sp-s works!</p> -->
+
+
+
+
+ <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link active" id="nav-view-tab" data-bs-toggle="tab" data-bs-target="#nav-view" type="button" role="tab" aria-controls="nav-view" aria-selected="true">View</button>
+      <button class="nav-link" id="nav-edit-tab" data-bs-toggle="tab" data-bs-target="#nav-edit" type="button" role="tab" aria-controls="nav-edit" aria-selected="false" (click)="resetStatus()">Edit</button>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-view" role="tabpanel" aria-labelledby="nav-view-tab">
+        Titile : {{user?.title}}<br>
+        Street Name : {{user?.streetname}}<br>
+        Plot No : {{user?.plotNo}}<br>
+        Area Name  : {{user?.areaName}} <br>
+        City   : {{user?.city}} <br>
+        State  : {{user?.state}} <br>
+        Country   : {{user?.country}} <br>
+        Pin Code   : {{user?.pinCode}} <br>
+        </div>
+    <div class="tab-pane fade" id="nav-edit" role="tabpanel" aria-labelledby="nav-edit-tab"> 
+  
+   
+  

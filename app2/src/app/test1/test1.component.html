@@ -1,0 +1,12 @@
+
+<form [formGroup]="employee" (ngSubmit)="save()">
+    
+<th>
+<table><td>ID : <input type="text" formControlName="id"/></td></table>
+<table><td>First Name :<input type="text" formControlName="firstName"/></td></table>
+<table><td>Last Name :<input type="text" formControlName="lastName"/></td></table>
+<table><td>Age :<input type="text" formControlName="age"/><td></table>
+<table><td>Salary: <input type="text" formControlName="salary"/></td></table>
+<table><td><input type="submit"/></td></table>
+</th>
+</form>

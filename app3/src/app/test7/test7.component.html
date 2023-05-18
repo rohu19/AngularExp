@@ -1,0 +1,25 @@
+<title>Hey Bro</title>
+
+<div *ngFor="let n1 of names">
+  {{ n1 }}
+</div>
+Prices:
+<div *ngFor="let n1 of prices">
+  {{ n1 }}
+</div>
+
+Persons:
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor="let person of persons">
+        <td> {{ person.id }}</td>
+        <td> {{ person.firstName }}</td>
+        <td> {{ person.lastName }}</td>
+        <td> {{ person.age  }}</td>
+    </tr>
+</table>
